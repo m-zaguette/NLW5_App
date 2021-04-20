@@ -5,7 +5,6 @@ import 'core/app_widget.dart';
 
 void main() {
   runApp(AppWidget());
-  // runApp(MyApp());
   // Essa função é sempre obrigatória
   // porém ao invés de rodar MyApp é possível rodar o app_widget.dart
 }

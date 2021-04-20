@@ -13,6 +13,7 @@ class ScoreCardWidget extends StatelessWidget {
         decoration: BoxDecoration(
             color: AppColors.white, borderRadius: BorderRadius.circular(15)),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(flex: 1, child: ChartWidget()),
