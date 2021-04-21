@@ -4,6 +4,7 @@ import 'package:nlw5_app/challenge/widgets/question_indicator/question_indicator
 import 'widgets/quiz/quiz_widget.dart';
 
 class ChallengePage extends StatefulWidget {
+  ChallengePage({Key? key}) : super(key: key);
   @override
   _ChallengePageState createState() => _ChallengePageState();
 }

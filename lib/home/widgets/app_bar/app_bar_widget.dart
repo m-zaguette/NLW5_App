@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:nlw5_app/core/core.dart';
 import 'package:nlw5_app/home/widgets/score_card/score_card_widget.dart';
+import 'package:nlw5_app/shared/models/user_model.dart';
 
 class AppBarWidget extends PreferredSize {
-  AppBarWidget()
+  final UserModel user;
+  AppBarWidget({required this.user})
       : super(
           preferredSize: Size.fromHeight(250),
           child: Container(
@@ -23,8 +25,7 @@ class AppBarWidget extends PreferredSize {
                           style: AppTextStyles.title,
                           children: [
                             TextSpan(
-                                text: "Marcelo!",
-                                style: AppTextStyles.titleBold)
+                                text: user.name, style: AppTextStyles.titleBold)
                           ])),
                       Container(
                         width: 58,
@@ -32,8 +33,7 @@ class AppBarWidget extends PreferredSize {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://avatars.githubusercontent.com/u/41178325?v=4"))),
+                                image: NetworkImage(user.photoURL))),
                       ),
                     ],
                   ),

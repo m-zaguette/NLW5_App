@@ -3,6 +3,16 @@ import 'package:nlw5_app/core/core.dart';
 import 'package:nlw5_app/shared/widgets/progress_indicator/progress_indicator_widget.dart';
 
 class QuizCardWidget extends StatelessWidget {
+  final String title;
+  final String completed;
+  final double percent;
+
+  const QuizCardWidget({
+    Key? key,
+    required this.title,
+    required this.completed,
+    required this.percent,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +33,7 @@ class QuizCardWidget extends StatelessWidget {
               height: 20,
             ),
             Text(
-              "Gerenciamento de Estado",
+              this.title,
               style: AppTextStyles.heading15,
             ),
             SizedBox(
@@ -34,11 +44,13 @@ class QuizCardWidget extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Text(
-                    "3/10",
+                    this.completed,
                     style: AppTextStyles.body11,
                   ),
                 ),
-                Expanded(flex: 4, child: ProgressIndicatorWidget(value: 0.3)),
+                Expanded(
+                    flex: 4,
+                    child: ProgressIndicatorWidget(value: this.percent)),
               ],
             ),
           ],
