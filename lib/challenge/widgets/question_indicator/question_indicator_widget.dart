@@ -3,6 +3,13 @@ import 'package:nlw5_app/core/core.dart';
 import 'package:nlw5_app/shared/widgets/progress_indicator/progress_indicator_widget.dart';
 
 class QuestionIndicatorWidget extends StatelessWidget {
+  final int currentPage;
+  final int totalLength;
+
+  const QuestionIndicatorWidget(
+      {Key? key, required this.currentPage, required this.totalLength})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,14 +19,14 @@ class QuestionIndicatorWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Questão 04", style: AppTextStyles.body),
-                Text("de 10", style: AppTextStyles.body),
+                Text("Questão $currentPage", style: AppTextStyles.body),
+                Text("de $totalLength", style: AppTextStyles.body),
               ],
             ),
             SizedBox(
               height: 16,
             ),
-            ProgressIndicatorWidget(value: 0.7),
+            ProgressIndicatorWidget(value: currentPage / totalLength),
           ],
         ));
   }

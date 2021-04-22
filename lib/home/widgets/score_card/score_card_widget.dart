@@ -6,6 +6,10 @@ import 'package:nlw5_app/home/widgets/chart/chart_widget.dart';
 class ScoreCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Size screenSize = MediaQuery.of(context).size;
+    final double screenWidth = screenSize.width;
+    final double screenHeight = screenSize.height;
+
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: Container(
