@@ -1,7 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:nlw5_app/core/core.dart';
 
-class ChartWidget extends StatelessWidget {
+class ChartWidget extends StatefulWidget {
+  final double percent;
+
+  const ChartWidget({Key? key, required this.percent}) : super(key: key);
+  @override
+  _ChartWidgetState createState() => _ChartWidgetState();
+}
+
+class _ChartWidgetState extends State<ChartWidget>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  void _initAnimation() {
+    _controller = AnimationController(
+        vsync: this, duration: Duration(milliseconds: 1500));
+    _animation =
+        Tween<double>(begin: 0.0, end: widget.percent).animate(_controller);
+    _controller.forward();
+  }
+
+  @override
+  void initState() {
+    _initAnimation();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
@@ -11,9 +37,11 @@ class ChartWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 12),
       child: Container(
-          height: screenHeight * 0.15,
-          width: screenWidth * 0.15,
-          child: Stack(
+        height: screenHeight * 0.15,
+        width: screenWidth * 0.15,
+        child: AnimatedBuilder(
+          animation: _animation,
+          builder: (context, _) => Stack(
             children: [
               Center(
                 child: Container(
@@ -21,7 +49,7 @@ class ChartWidget extends StatelessWidget {
                   width: screenWidth * 0.5,
                   child: CircularProgressIndicator(
                     strokeWidth: screenWidth * 0.025,
-                    value: .75,
+                    value: _animation.value,
                     backgroundColor: AppColors.chartSecondary,
                     valueColor:
                         AlwaysStoppedAnimation<Color>(AppColors.chartPrimary),
@@ -30,12 +58,14 @@ class ChartWidget extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  "75%",
+                  "${(_animation.value * 100).toInt()}%",
                   style: AppTextStyles.heading,
                 ),
               )
             ],
-          )),
+          ),
+        ),
+      ),
     );
   }
 }

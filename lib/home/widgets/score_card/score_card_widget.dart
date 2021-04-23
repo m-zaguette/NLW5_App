@@ -4,12 +4,11 @@ import 'package:nlw5_app/core/app_text_styles.dart';
 import 'package:nlw5_app/home/widgets/chart/chart_widget.dart';
 
 class ScoreCardWidget extends StatelessWidget {
+  final double percent;
+
+  const ScoreCardWidget({Key? key, required this.percent}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
-    final double screenWidth = screenSize.width;
-    final double screenHeight = screenSize.height;
-
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: Container(
@@ -20,7 +19,11 @@ class ScoreCardWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Expanded(flex: 1, child: ChartWidget()),
+            Expanded(
+                flex: 1,
+                child: ChartWidget(
+                  percent: this.percent,
+                )),
             Expanded(
               flex: 3,
               child: Padding(

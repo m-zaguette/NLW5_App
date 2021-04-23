@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:nlw5_app/challenge/challenge_controller.dart';
 import 'package:nlw5_app/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:nlw5_app/challenge/widgets/question_indicator/question_indicator_widget.dart';
-import 'package:nlw5_app/core/core.dart';
+import 'package:nlw5_app/result/result_page.dart';
 import 'package:nlw5_app/shared/models/question_model.dart';
 
 import 'widgets/quiz/quiz_widget.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;
+  final String title;
 
-  ChallengePage({Key? key, required this.questions}) : super(key: key);
+  ChallengePage({Key? key, required this.questions, required this.title})
+      : super(key: key);
 
   @override
   _ChallengePageState createState() => _ChallengePageState();
@@ -31,6 +33,13 @@ class _ChallengePageState extends State<ChallengePage> {
     if (controller.currentPage < widget.questions.length)
       pageController.nextPage(
           duration: Duration(milliseconds: 150), curve: Curves.linear);
+  }
+
+  void onSelected(bool value) {
+    if (value) {
+      controller.quantityAnswerRight++;
+    }
+    nextPage();
   }
 
   @override
@@ -65,9 +74,7 @@ class _ChallengePageState extends State<ChallengePage> {
             .map(
               (e) => QuizWidget(
                 question: e,
-                onChange: () {
-                  nextPage(); //time in miliseconds
-                },
+                onSelected: onSelected, //time in miliseconds
               ),
             )
             .toList(),
@@ -95,7 +102,15 @@ class _ChallengePageState extends State<ChallengePage> {
                       child: NextButtonWidget.green(
                     label: "Confirmar",
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ResultPage(
+                                  result: controller.quantityAnswerRight,
+                                  title: widget.title,
+                                  questionsLength: widget.questions.length,
+                                )),
+                      );
                     },
                   )),
               ],

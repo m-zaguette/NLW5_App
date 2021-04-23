@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:nlw5_app/core/core.dart';
 import 'package:nlw5_app/home/home_repository.dart';
 import 'package:nlw5_app/home/home_state.dart';
-import 'package:nlw5_app/shared/models/answer_model.dart';
-import 'package:nlw5_app/shared/models/question_model.dart';
 import 'package:nlw5_app/shared/models/quiz_model.dart';
 import 'package:nlw5_app/shared/models/user_model.dart';
 
