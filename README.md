@@ -4,25 +4,27 @@
 
 <p>
    
-   - [Sobre 📖](#sobre-)
-   - [Prévia 📱](#prévia-)
+   - [About 📖](#about-)
+   - [Preview 📱](#preview-)
    - [Layout 🎨](#layout-)
-   - [Funcionalidades 🛠️](#funcionalidades-%EF%B8%8F)
+   - [Functionalities 🛠️](#functionalities-%EF%B8%8F)
 
 </p>
 
 ---
 
-<h2 align="center">Sobre 📖</h2>
+<h2 align="center">About 📖</h2>
 
 <p align="center">
-    Esse projeto foi desenvolvido ao longo do NLW5 da Rocketseat. <br>
-    O objetivo é desenvolver um Quiz para programadores para aprimorar o conhecimento sobre determinada tecnologia. No caso, o Flutter. <br>
+   These project were develop during NLW5 by Rocketseat. 
+   The app language is Brazilian Portuguese.
+   The objective were develop an Quiz to programmers to help increase their knowledge. This case, <a href="https://flutter.dev/">Flutter</a>.
+   <br>
 </p>
 
 ---
 
-<h2 align="center">Prévia 📱</h2>
+<h2 align="center">Preview 📱</h2>
 
    <div align="center">
 
@@ -35,23 +37,23 @@
 <h2 align="center">Layout 🎨</h2>
 
    <p align="center">
-      O Layout foi desenvolvido pelo <a href="https://instagram.com/tiagoluchtenberg">Tiago Luchtenberg</a>, e você pode acessá-lo com o Figma:
+      The layout were made by <a href="https://instagram.com/tiagoluchtenberg">Tiago Luchtenberg</a>, and you can find it using Figma:
    
    - <a href="https://www.figma.com/file/XaC3pgD1B0iLSWLTsUqxIe/DevQuiz-(Copy)?node-id=0%3A1">DevQuiz</a> 📱
    </p>
 
 ---
 
-<h2 align="center">Funcionalidades 🛠️</h2>
+<h2 align="center">Functionalities 🛠️</h2>
 
    <p>
    
 - Quiz
-    - Quesões,
-    - Respostas,
-    - Feedback para usuário,
-    - Resultado e pontos,
-    - Compartilhar ...
+    - Questions,
+    - Answers,
+    - Feedback to user,
+    - Results and points,
+    - Share
   
    </p>
 
