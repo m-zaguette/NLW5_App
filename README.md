@@ -5,14 +5,9 @@
 <p>
    
    - [Sobre 📖](#sobre-)
-   - [Preview 📱](#preview-)
+   - [Prévia 📱](#prévia-)
    - [Layout 🎨](#layout-)
-   - [Functionalities 🛠️](#functionalities-%EF%B8%8F)
-   - [Challenges and Learnings along the way 🤯](#challenges-and-learnings-along-the-way-)
-   - [Notion Files 📋](#notion-files-)
-   - [How to Use 🤔](#how-to-use-)
-   - [How to Contribute 💪](#how-to-contribute-)
-   - [License 📝](#license-)
+   - [Funcionalidades 🛠️](#funcionalidades-%EF%B8%8F)
 
 </p>
 
@@ -27,14 +22,38 @@
 
 ---
 
-<h2 align="center">Preview 📱</h2>
+<h2 align="center">Prévia 📱</h2>
 
    <div align="center">
 
    ![app_finalizado](https://user-images.githubusercontent.com/41178325/116305970-de28da00-a77a-11eb-9ab1-a4917bce1d5e.gif)
    
    </div>
+   
+---
 
+<h2 align="center">Layout 🎨</h2>
+
+   <p align="center">
+      O Layout foi desenvolvido pelo <a href="https://instagram.com/tiagoluchtenberg">Tiago Luchtenberg</a>, e você pode acessá-lo com o Figma:
+   
+   - <a href="https://www.figma.com/file/XaC3pgD1B0iLSWLTsUqxIe/DevQuiz-(Copy)?node-id=0%3A1">DevQuiz</a> 📱
+   </p>
+
+---
+
+<h2 align="center">Funcionalidades 🛠️</h2>
+
+   <p>
+   
+- Quiz
+    - Quesões,
+    - Respostas,
+    - Feedback para usuário,
+    - Resultado e pontos,
+    - Compartilhar ...
+  
+   </p>
 
 ---
 
