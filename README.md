@@ -4,7 +4,7 @@
 
 <p>
    
-   - [About 📖](#about-)
+   - [Sobre 📖](#sobre-)
    - [Preview 📱](#preview-)
    - [Layout 🎨](#layout-)
    - [Functionalities 🛠️](#functionalities-%EF%B8%8F)
@@ -18,12 +18,11 @@
 
 ---
 
-<h2 align="center">About 📖</h2>
+<h2 align="center">Sobre 📖</h2>
 
 <p align="center">
-    This project was developed at Next Level Week, an intense week of studies, networking, friendship, group work, accompanied by a sensational project developed by Rocketseat from the 19th to the 25th of April. <br>
-    This application is intended to be a Quiz for programmers to intensify their knowledge in programming through the exercises proposed by the application, where you have interactivity of questions and answers. <br>
-    It is a basic project so far, but it opens many doors for ideas, features, partnerships, and a lot of learning that I will take to my professional. Another NLW week concluded successfully and with a lot of presence in the community, helping other people and taking questions from same. It was incredible! <br>
+    Esse projeto foi desenvolvido ao longo do NLW5 da Rocketseat. <br>
+    O objetivo é desenvolver um Quiz para programadores para aprimorar o conhecimento sobre determinada tecnologia. No caso, o Flutter. <br>
 </p>
 
 ---
@@ -36,3 +35,9 @@
    
    </div>
 
+
+---
+
+<div align = "center">
+   <a href="https://www.linkedin.com/in/marcelozaguettejunior/"><img src="https://img.shields.io/badge/-Marcelo%20Zaguette%20Junior-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcelozaguettejunior/" alt="Linkedin: Marcelo Zaguette"></a>
+</div>
