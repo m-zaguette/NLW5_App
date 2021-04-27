@@ -31,6 +31,8 @@
 <h2 align="center">Preview 📱</h2>
 
    <p align="center">
-      <img src="assets/images/devquiz.gif" width="400" alt="DevQuiz Demo">
+      
+      ![image](https://user-images.githubusercontent.com/41178325/116305921-cea99100-a77a-11eb-84c9-7729d0bbdfb5.png)
+      
    </p>
 
