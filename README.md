@@ -32,7 +32,7 @@
 
    <p align="center">
       
-      ![image](https://user-images.githubusercontent.com/41178325/116305921-cea99100-a77a-11eb-84c9-7729d0bbdfb5.png)
+      ![app_finalizado](https://user-images.githubusercontent.com/41178325/116305970-de28da00-a77a-11eb-9ab1-a4917bce1d5e.gif)
       
    </p>
 
