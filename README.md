@@ -30,9 +30,9 @@
 
 <h2 align="center">Preview 📱</h2>
 
-   <p align="center">
-      
-      ![app_finalizado](https://user-images.githubusercontent.com/41178325/116305970-de28da00-a77a-11eb-9ab1-a4917bce1d5e.gif)
-      
-   </p>
+   <div align="center">
+
+   ![app_finalizado](https://user-images.githubusercontent.com/41178325/116305970-de28da00-a77a-11eb-9ab1-a4917bce1d5e.gif)
+   
+   </div>
 
