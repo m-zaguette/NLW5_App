@@ -1,7 +1,9 @@
 <p align="center">
-      <img src="https://github.com/m-zaguette/NLW5_App/blob/master/assets/images/logo.png
-" width="70" alt="Logo dev.quiz_"/>
+
+![image](https://user-images.githubusercontent.com/41178325/116305409-209de700-a77a-11eb-9beb-c74d70fa664f.png)
+
 </p>
+
 
 <h1 align="center">NLW5 - DevQuiz</h1>
 
