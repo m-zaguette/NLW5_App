@@ -16,7 +16,7 @@
 <h2 align="center">About 📖</h2>
 
 <p align="center">
-   These project were develop during NLW5 by Rocketseat. 
+   These project were developed during NLW5 by Rocketseat. 
    The app language is Brazilian Portuguese.
    The objective were develop an Quiz to programmers to help increase their knowledge. This case, <a href="https://flutter.dev/">Flutter</a>.
    <br>
